@@ -1,0 +1,12 @@
+/* style.css for supreme-team-project-2 */
+
+#main {
+        color: #001f3f;
+        border: solid #001f3f 2px;
+        border-radius: 3px;
+    }
+
+footer {
+    text-align: center;
+    margin-bottom: 0.75rem;
+    }
