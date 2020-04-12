@@ -11,4 +11,27 @@ footer a{
     color: #347235;
     }
 
-#map, body, html{width: 100%; height: 98.8%; text-align: center;}
+#map, body, html{width: 100%; height: 98.9%;}
+
+p.main {
+    text-align: left;
+    }
+
+
+#summary_text {
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+}
+
+#static {
+    display: inline;
+    border: solid  #5d6d7e  2px;
+    margin-left: 2px;
+    margin-right: 0;
+    }
+    
+
+footer {
+    text-align: center;
+}

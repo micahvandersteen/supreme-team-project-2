@@ -20,29 +20,46 @@
     
   <body>
     <div class="container" id="main">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Minnesota Education Dashboard</h1><hr>
-              <span><p class="lead">An interactive visualization of Minnesota's school districts.&nbsp;<a class="btn btn-success btn-md" href="Visualizations.html" 
-                role="button"><strong>&rarr;</strong>&nbsp;&nbsp;Visualizations</a></p></span>
-              
-            </div>
+
+          <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Minnesota Education Dashboard</h1><hr>
+                <span><p class="lead">An interactive visualization of Minnesota's school districts.&nbsp;<a class="btn btn-success btn-md" href="Visualizations.html" 
+                role="button"><strong>&rarr;</strong>&nbsp;&nbsp;Interactive Map</a></p></span>
+              </div>
           </div>
 
       <div class="row">
-        <div class="col-md-12">
-          <h3>Summary</h3>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-                quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                ultricies mi vitae est. Mauris placerat eleifend leo.
-            </p>  
 
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-                quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                ultricies mi vitae est. Mauris placerat eleifend leo.
-            </p>       
+        <div class="col-md-6" id="summary_text">
+          <h3>Summary</h3>
+              <p class="main">This dashboard features an <a href="Visualizations.html">interactive map</a> of Minnesota showing the boundaries of each public school district in the state. 
+              Click on a district to see its name and the number of students enrolled.
+              </p> 
         </div>
-      </div>
+
+        <div class="col-md-5" id="static">
+              <h5>Put Static Viz Here - - - Put Static Viz Here</h5>
+                <p>""</p>
+                <p>" . . . "</p>
+                <p>""</p>
+                <p>more content here</p>
+        </div>
+      </div> <!--END first row -->
+        
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Source Data:</h5>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+                quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+              </p> 
+            </div>
+        </div>
+
+
+        
+      
 
       
       <div class="row">   
@@ -50,7 +67,8 @@
            <footer>2020 | A supreme-team production.</footer> 
         </div>
       </div>
-         
+
+    </div>   <!--END main container-->  
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

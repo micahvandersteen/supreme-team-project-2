@@ -39,3 +39,4 @@ CREATE TABLE INCOME (
     mHI INT
     
 );
+
