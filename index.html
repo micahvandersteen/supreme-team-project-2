@@ -25,7 +25,7 @@
               <div class="container">
                 <h1 class="display-4">Minnesota Education Dashboard</h1><hr>
                 <span><p class="lead">An interactive visualization of Minnesota's school districts.&nbsp;<a class="btn btn-success btn-md" href="Visualizations.html" 
-                role="button"><strong>&rarr;</strong>&nbsp;&nbsp;Interactive Map</a></p></span>
+                role="button"><strong>&rarr;</strong>&nbsp;&nbsp;Interactive Map</a>&nbsp;&nbsp;<button type="button" class="btn btn-outline-success">&rarr;&nbsp;<b>API</b></button></p></span>
               </div>
           </div>
 
@@ -34,9 +34,11 @@
         <div class="col-md-6" id="summary_text">
           <h3>Summary</h3>
               <p class="main">This dashboard features an <a href="Visualizations.html">interactive map</a> of Minnesota showing the boundaries of each public school district in the state. 
-              Click on a district to see its name and the number of students enrolled.
-              </p> 
-        </div>
+              Boundaries shown are for the 2018-19 school year. Click on a district to see its name and the average number of students enrolled.
+              </p>
+			<p>Data used for the analyses were sourced from the U.S. Census, the Minnesota Department of Education, and the National Center for Education Statistics (NCES). For more information on the data sources see the links provided below.
+			</p>
+		</div>
 
         <div class="col-md-5" id="static">
               <h5>Put Static Viz Here - - - Put Static Viz Here</h5>
@@ -50,10 +52,16 @@
         
         <div class="row">
             <div class="col-md-6">
-                <h5>Source Data:</h5>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-                quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
-              </p> 
+                <h6>Source Data:</h6>
+				<ul>
+					<li>2018-Minnesota Median Household Income Data. American Community Survey Table S1901. Retrieved from <a href="https://data.census.gov/cedsci/table?q=Minnesota-income.gov">https://data.census.gov/cedsci/table?q=Minnesota-income.gov</a></li>
+					<li>National Center for Education Statistics (NCES). School District Boundaries-Current. Retrieved from <a href="https://data-nces.opendata.arcgis.com/datasets/school-district-boundaries-current/data?where=STATEFP%20%3D%20%2727%27">https://data-nces.opendata.arcgis.com/datasets/school-district-boundaries</a> </li>
+					<li>2018-2019 General Fund Expenditures (Minnesota Department of Education (MDE). General Fund unreserved Balance for FY 2013-Present. Downloaded 4/4/2020 from <a href="https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=43">https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=43</a></li>
+					<li>2019 Average Daily Membership (Minnesota Department of Education (MDE). Downloaded 4/4/2020 from <a href="https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=2">https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=2</a></li>
+					<li>2019 Percent Proficient in Reading (Minnesota Department of Education (MDE). Reading MCA MTAS Results. Downloaded 4/4/2020 from <a href="https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=1">https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=1</a></li>
+					<li>2019 Average Teacher Salary (Minnesota Professional Educator Licensing and Standards Board (PELSB). Licensed Average Salary by District. Downloaded 4/4/2020 from <a href="https://public.education.mn.gov/MDEAnalytics/PELSB.jsp?TOPICID=437">https://public.education.mn.gov/MDEAnalytics/PELSB.jsp?TOPICID=437</a></li>
+				</ul>
+                
             </div>
         </div>
 
