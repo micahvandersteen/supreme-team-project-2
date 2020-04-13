@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>MN Education Dashboard Home</title>
+      <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- Leaflet CSS & JS-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+      <!-- Leaflet-Choropleth JavaScript -->
+        <script type="text/javascript" src="static/js/choropleth.js"></script>
+      <!--Plotly-->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <!--Our CSS-->
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  </head>
+    
+  <body>
+    <div class="container" id="main">
+
+          <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">API Documentation</h1><hr>
+                <span><p class="lead">Welcome to the Minnesota Education Dashboard API&nbsp;&nbsp;<a class="btn btn-success btn-md" href="Visualizations.html" 
+                role="button"><strong>&rarr;</strong>&nbsp;&nbsp;Interactive Map</a></p></span>
+              </div>
+          </div>
+
+      <div class="row">
+
+        <div class="col-md-12" id="api_summary_text">
+          <h4>Looking for data?</h4>
+              <p class="main">Use the base url with any of the keywords below to call for education data 
+              
+			    <ul>
+                    <li>by District name</li>
+                    <li>by enrollment</li>
+                    <li>by assessment scores</li>
+                    <li> . . </li>
+                    <li> . . </li>
+                </ul>
+            </p>
+		</div>
+
+        <div class="col-md-12">
+              
+                
+               
+        </div>
+      </div> <!--END first row -->
+        
+        
+        <div class="row">
+            <div class="col-md-6">
+                
+				
+                
+            </div>
+        </div>
+
+
+        
+      
+
+      
+        <div class="row">   
+            <div class="col-md-12">
+               <footer><a href="index.html">Back to Home</a></footer> 
+            </div>
+          </div>
+
+    </div>   <!--END main container-->  
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="static/js/config.js"></script>
+        <script type="text/javascript" src="static/js/logic.js"></script>
+        <script type="text/javascript" src="static/js/plot.js"></script>
+
+        
+    </div>
+  </body>
+</html>

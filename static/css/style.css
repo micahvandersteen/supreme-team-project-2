@@ -26,9 +26,12 @@ p.main {
 
 #static {
     display: inline;
-    border: solid  #5d6d7e  2px;
+    /*border: solid  #5d6d7e  1px;*/
     margin-left: 2px;
     margin-right: 0;
+    position: relative;
+    left: 36px;
+    
     }
     
 
