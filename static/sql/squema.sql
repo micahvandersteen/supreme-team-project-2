@@ -1,8 +1,8 @@
-DROP DATABASE MN_ED;
+DROP DATABASE IF EXISTS MN_ED;
 CREATE DATABASE MN_ED;
 
 /* from Dept. of Ed districtleveldata.csv */
-CREATE TABLE DISTRICTS (
+CREATE TABLE districts (
 
     id INT PRIMARY KEY,
     districtName TEXT,
@@ -25,18 +25,39 @@ CREATE TABLE DISTRICTS (
 );
 
 /* from districts.geojson */
-CREATE TABLE COORDINATES (
-    id INT PRIMARY KEY,
+CREATE TABLE coordinates (
+    geoid INT PRIMARY KEY,
     dName TEXT,
     lat NUMERIC,
     lng NUMERIC
 );
 
 /* from census data */
-CREATE TABLE INCOME (
-    censusid INT PRIMARY KEY,
-    popCount INT,
-    mHI INT
-    
+CREATE TABLE census (
+    censusId INT PRIMARY KEY,
+    medianHouseIncome INT,
+    mHI_MarginofError INT,
+    NoComp_Cnt INT,
+    NoComp_Pct DEC,
+    YesComp_Cnt INT,
+    YesComp_Pct DEC,
+    NoInternet_Cnt INT,
+    NoInternet_Pct DEC,
+    YesInternet_Cnt INT,
+    YesInternet_Pct DEC
 );
+
+/* Insert data from CSV files */ 
+/* Update file paths to location on local computer */
+COPY districts
+FROM 'path\...\static\data\districtleveldata.csv'
+WITH (FORMAT CSV, HEADER);
+
+COPY coordinates
+FROM 'path\...\static\data\districtcoordinates.csv'
+WITH (FORMAT CSV, HEADER);
+
+COPY census
+FROM 'path\...\static\data\districtdata_census.csv'
+WITH (FORMAT CSV, HEADER);
 
