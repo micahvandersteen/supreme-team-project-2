@@ -19,12 +19,15 @@ SELECT a.*, b.*
 ALTER TABLE combined
 DROP COLUMN censusid;
 
-CREATE TABLE MNEducationDashboard AS (
+CREATE TABLE mnEducationDashboard AS (
 SELECT a.*, c.lat, c.lng
 	FROM combined a
 	INNER JOIN coordinates c
 	ON a.id = c.geoid
 );
+
+ALTER TABLE mnEducationDashboard 
+ADD PRIMARY KEY (id);
 
 /* Export data to CSV */
 COPY MNEducationDashboard
