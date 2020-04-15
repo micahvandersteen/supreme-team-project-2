@@ -1,0 +1,331 @@
+GEOID,DST_NAM,ORGID
+2799999,State of Minnesota,999999000000
+2702760,Aitkin Public School District,010001000000
+2721240,Minneapolis Public School District,030001000000
+2714010,Hill City Public School District,010002000000
+2719170,McGregor Public School District,010004000000
+2733270,South St. Paul Public School District,030006000000
+2703180,Anoka-Hennepin Public School District,010011000000
+2708100,Centennial Public School District,010012000000
+2709510,Columbia Heights Public School District,010013000000
+2712420,Fridley Public School District,010014000000
+2733540,St. Francis Public School District,010015000000
+2733330,Spring Lake Park Public Schools,010016000000
+2710230,Detroit Lakes Public School District,010022000000
+2712360,Frazee-Vergas Public School District,010023000000
+2728960,Pine Point Public School District,010025000000
+2704440,Bemidji Public School District,010031000000
+2705730,Blackduck Public School District,010032000000
+2717010,Kelliher Public School District,010036000000
+2730510,Red Lake Public School District,010038000000
+2732880,Sauk Rapids-Rice Public Schools,010047000000
+2712240,Foley Public School District,010051000000
+2733480,St. Clair Public School District,010075000000
+2718780,Mankato Public School District,010077000000
+2709540,Comfrey Public School District,010081000000
+2733210,Sleepy Eye Public School District,010084000000
+2733390,Springfield Public School District,010085000000
+2723490,New Ulm Public School District,010088000000
+2703690,Barnum Public School District,010091000000
+2707590,Carlton Public School District,010093000000
+2709420,Cloquet Public School District,010094000000
+2709690,Cromwell-Wright Public Schools,010095000000
+2721450,Moose Lake Public School District,010097000000
+2738880,Esko Public School District,010099000000
+2744190,Wrenshall Public School District,010100000000
+2723910,Central Public School District,010108000000
+2741460,Waconia Public School District,010110000000
+2741910,Watertown-Mayer Public School District,010111000000
+2708190,Eastern Carver County Public Schools,010112000000
+2702910,Walker-Hackensack-Akeley School District,010113000000
+2708070,Cass Lake-Bena Public Schools,010115000000
+2728350,Pillager Public School District,010116000000
+2730870,Northland Community Schools,010118000000
+2721320,Montevideo Public School District,010129000000
+2723820,North Branch Public Schools,010138000000
+2732550,Rush City Public School District,010139000000
+2703660,Barnesville Public School District,010146000000
+2713560,Hawley Public School District,010150000000
+2721420,Moorhead Public School District,010152000000
+2703570,Bagley Public School District,010162000000
+2713110,Cook County Public Schools,010166000000
+2723010,Mountain Lake Public Schools,010173000000
+2742780,Windom Public School District,010177000000
+2706090,Brainerd Public School District,010181000000
+2709750,Crosby-Ironton Public School District,010182000000
+2728200,Pequot Lakes Public Schools,010186000000
+2707290,Burnsville Public School District,010191000000
+2711820,Farmington Public School District,010192000000
+2717780,Lakeville Public School District,010194000000
+2730150,Randolph Public School District,010195000000
+2732390,Rosemount-Apple Valley-Eagan,010196000000
+2742270,West St. Paul-Mendota Heights-Eagan,010197000000
+2715030,Inver Grove Heights Schools,010199000000
+2713530,Hastings Public School District,010200000000
+2713590,Hayfield Public School District,010203000000
+2716980,Kasson-Mantorville School District,010204000000
+2703060,Alexandria Public School District,010206000000
+2725140,Osakis Public School District,010213000000
+2708220,Chatfield Public Schools,010227000000
+2717910,Lanesboro Public School District,010229000000
+2718540,Mabel-Canton Public School District,010238000000
+2728290,Rushford-Peterson Public Schools,010239000000
+2702970,Albert Lea Public School District,010241000000
+2703030,Alden-Conger Public School District,010242000000
+2707500,Cannon Falls Public School District,010252000000
+2712900,Goodhue Public School District,010253000000
+2728950,Pine Island Public School District,010255000000
+2730480,Red Wing Public School District,010256000000
+2703300,Ashby Public School District,010261000000
+2713890,Herman-Norcross School District,010264000000
+2714260,Hopkins Public School District,010270000000
+2705790,Bloomington Public School District,010271000000
+2714220,Eden Prairie Public School District,010272000000
+2711250,Edina Public School District,010273000000
+2711670,Minnetonka Public School District,010276000000
+2722920,Westonka Public School District,010277000000
+2725080,Orono Public School District,010278000000
+2725200,Osseo Public School District,010279000000
+2731750,Richfield Public School District,010280000000
+2731780,Robbinsdale Public School District,010281000000
+2733420,St. Anthony-New Brighton Schools,010282000000
+2733780,St. Louis Park Public School District,010283000000
+2742160,Wayzata Public School District,010284000000
+2706240,Brooklyn Center School District,010286000000
+2714280,Houston Public School District,010294000000
+2733300,Spring Grove School District,010297000000
+2707380,Caledonia Public School District,010299000000
+2717250,La Crescent-Hokah School District,010300000000
+2717940,Laporte Public School District,010306000000
+2723370,Nevis Public School District,010308000000
+2728080,Park Rapids Public School District,010309000000
+2706060,Braham Public School District,010314000000
+2709480,Greenway Public School District,010316000000
+2710140,Deer River Public School District,010317000000
+2713170,Grand Rapids Public School District,010318000000
+2723310,Nashwauk-Keewatin School District,010319000000
+2713930,Heron Lake-Okabena School District,010330000000
+2721480,Mora Public School District,010332000000
+2723970,Ogilvie Public School District,010333000000
+2723400,New London-Spicer School District,010345000000
+2742720,Willmar Public School District,010347000000
+2717880,Lancaster Public School District,010356000000
+2715000,International Falls School District,010361000000
+2718270,Littlefork-Big Falls School District,010362000000
+2732700,South Koochiching School District,010363000000
+2710090,Dawson-Boyd Public School District,010378000000
+2740740,Lake Superior Public School District,010381000000
+2717570,Lake of The Woods School District,010390000000
+2709330,Cleveland Public School District,010391000000
+2713680,Hendricks Public School District,010402000000
+2715540,Ivanhoe Public School District,010403000000
+2717460,Lake Benton Public School District,010404000000
+2718940,Marshall Public School District,010413000000
+2721270,Minneota Public School District,010414000000
+2718390,Lynd Public School District,010415000000
+2714970,Hutchinson Public School District,010423000000
+2702640,Lester Prairie Public School District,010424000000
+2718660,Mahnomen Public School District,010432000000
+2742120,Waubun-Ogema-White Earth Public Schools,010435000000
+2723550,Marshall County Central Schools,010441000000
+2718920,Grygla Public School District,010447000000
+2740680,Truman Public School District,010458000000
+2711190,Eden Valley-Watkins School District,010463000000
+2718210,Litchfield Public School District,010465000000
+2710060,Dassel-Cokato Public School District,010466000000
+2715510,Isle Public School District,010473000000
+2730030,Princeton Public School District,010477000000
+2725050,Onamia Public School District,010480000000
+2718240,Little Falls Public School District,010482000000
+2728320,Pierz Public School District,010484000000
+2732520,Royalton Public School District,010485000000
+2738280,Swanville Public School District,010486000000
+2740860,Upsala Public School District,010487000000
+2703450,Austin Public School District,010492000000
+2713140,Grand Meadow Public School District,010495000000
+2718360,Lyle Public School District,010497000000
+2718060,LeRoy-Ostrander Public Schools,010499000000
+2702720,Southland Public School District,010500000000
+2712480,Fulda Public School District,010505000000
+2723580,Nicollet Public School District,010507000000
+2733870,St. Peter Public School District,010508000000
+2702730,Adrian Public School District,010511000000
+2711460,Ellsworth Public School District,010514000000
+2744160,Worthington Public School District,010518000000
+2707350,Byron Public School District,010531000000
+2711010,Dover-Eyota Public School District,010533000000
+2738160,Stewartville Public School District,010534000000
+2731800,Rochester Public School District,010535000000
+2703750,Battle Lake Public School District,010542000000
+2711880,Fergus Falls Public School District,010544000000
+2713860,Henning Public School District,010545000000
+2728110,Parkers Prairie Public School District,010547000000
+2728170,Pelican Rapids Public School District,010548000000
+2728230,Perham-Dent Public School District,010549000000
+2740830,Underwood Public School District,010550000000
+2723520,New York Mills Public School District,010553000000
+2713020,Goodridge Public School District,010561000000
+2738850,Thief River Falls School District,010564000000
+2742750,Willow River Public School District,010577000000
+2728380,Pine City Public School District,010578000000
+2711220,Edgerton Public School District,010581000000
+2709360,Climax-Shelly Public Schools,010592000000
+2709720,Crookston Public School District,010593000000
+2711130,East Grand Forks Public School District,010595000000
+2711910,Fertile-Beltrami School District,010599000000
+2712180,Fisher Public School District,010600000000
+2712300,Fosston Public School District,010601000000
+2722950,Mounds View Public School District,010621000000
+2723850,North St. Paul-Maplewood-Oakdale School District,010622000000
+2732430,Roseville Public School District,010623000000
+2742360,White Bear Lake School District,010624000000
+2733840,St. Paul Public School District,010625000000
+2730450,Red Lake Falls Public School District,010630000000
+2721210,Milroy Public School District,010635000000
+2741430,Wabasso Public School District,010640000000
+2711760,Faribault Public School District,010656000000
+2723880,Northfield Public School District,010659000000
+2714040,Hills-Beaver Creek School District,010671000000
+2703540,Badger Public School District,010676000000
+2732250,Roseau Public School District,010682000000
+2741850,Warroad Public School District,010690000000
+2708910,Chisholm Public School District,010695000000
+2711520,Ely Public School District,010696000000
+2712210,Floodwood Public School District,010698000000
+2713920,Hermantown Public School District,010700000000
+2713980,Hibbing Public School District,010701000000
+2730090,Proctor Public School District,010704000000
+2741040,Virginia Public School District,010706000000
+2733720,Nett Lake Public School District,010707000000
+2711040,Duluth Public School District,010709000000
+2700001,Mountain Iron-Buhl School District,010712000000
+2704050,Belle Plaine Public School District,010716000000
+2715750,Jordan Public School District,010717000000
+2730060,Prior Lake-Savage Area Schools,010719000000
+2733000,Shakopee Public School District,010720000000
+2723430,New Prague Area Schools,010721000000
+2703870,Becker Public School District,010726000000
+2705460,Big Lake Public School District,010727000000
+2711370,Elk River Public School District,010728000000
+2714190,Holdingford Public School District,010738000000
+2717220,Kimball Public School District,010739000000
+2720550,Melrose Public School District,010740000000
+2728140,Paynesville Public School District,010741000000
+2733510,St. Cloud Public School District,010742000000
+2732850,Sauk Centre Public School District,010743000000
+2702930,Albany Public School District,010745000000
+2732820,Sartell-St. Stephen School District,010748000000
+2709440,Rocori Public School District,010750000000
+2705760,Blooming Prairie Public School District,010756000000
+2728050,Owatonna Public School District,010761000000
+2719320,Medford Public School District,010763000000
+2713380,Hancock Public School District,010768000000
+2708940,Chokio-Alberta Public School District,010771000000
+2717120,Kerkhoven-Murdock-Sunburg,010775000000
+2704470,Benson Public School District,010777000000
+2705430,Bertha-Hewitt Public School District,010786000000
+2706300,Browerville Public School District,010787000000
+2707110,Browns Valley Public School District,010801000000
+2742330,Wheaton Area Public School District,010803000000
+2741060,Wabasha-Kellogg Public School District,010811000000
+2717520,Lake City Public School District,010813000000
+2740920,Verndale Public School District,010818000000
+2732970,Sebeka Public School District,010820000000
+2720580,Menahga Public School District,010821000000
+2741880,Waseca Public School District,010829000000
+2712270,Forest Lake Public School District,010831000000
+2718750,Mahtomedi Public School District,010832000000
+2733810,South Washington County School District,010833000000
+2738190,Stillwater Area Public School District,010834000000
+2707320,Butterfield Public School District,010836000000
+2718570,Madelia Public School District,010837000000
+2733600,St. James Public School District,010840000000
+2706150,Breckenridge Public School District,010846000000
+2732460,Rothsay Public School District,010850000000
+2707450,Campbell-Tintah Public School District,010852000000
+2718090,Lewiston-Altura Public School District,010857000000
+2733450,St. Charles Public School District,010858000000
+2744070,Winona Area Public School District,010861000000
+2703150,Annandale Public School District,010876000000
+2707200,Buffalo-Hanover-Montrose Public Schools,010877000000
+2710170,Delano Public School District,010879000000
+2718810,Maple Lake Public School District,010881000000
+2721390,Monticello Public School District,010882000000
+2732070,Rockford Public School District,010883000000
+2733790,St. Michael-Albertville School District,010885000000
+2707470,Canby Public School District,010891000000
+2707410,Cambridge-Isanti Public School District,010911000000
+2720670,Milaca Public School District,010912000000
+2740810,Ulen-Hitterdal Public School District,010914000000
+2791445,Lake Crystal-Wellcome Memorial,012071000000
+2740665,Triton School District,012125000000
+2700005,United South Central School District,012134000000
+2700006,Maple River School District,012135000000
+2700007,Kingsland Public School District,012137000000
+2700008,St. Louis County School District,012142000000
+2700013,Waterville-Elysian-Morristown Public School District,012143000000
+2700017,Chisago Lakes School District,012144000000
+2700019,Minnewaska School District,012149000000
+2700021,Eveleth-Gilbert School District,012154000000
+2700022,Wadena-Deer Creek School District,012155000000
+2700023,Buffalo Lake-Hector-Stewart Public Schools,012159000000
+2710260,Dilworth-Glyndon-Felton,012164000000
+2714070,Hinckley-Finlayson School District,012165000000
+2700088,Lakeview School District,012167000000
+2700089,NRHEG School District,012168000000
+2700090,Murray County Central School District,012169000000
+2733900,Staples-Motley School District,012170000000
+2791447,Kittson Central School District,012171000000
+2717100,Kenyon-Wanamingo School District,012172000000
+2728970,Pine River-Backus Public School District,012174000000
+2700024,Warren-Alvarado-Oslo School District,012176000000
+2700091,MACCRAY School District,012180000000
+2718330,Luverne Public School District,012184000000
+2700099,Yellow Medicine East,012190000000
+2700100,Fillmore Central,012198000000
+2700101,Norman County East School District,012215000000
+2700102,Sibley East School District,012310000000
+2700103,Clearbrook-Gonvick School District,012311000000
+2700104,West Central Area,012342000000
+2791446,Tri-County School District,012358000000
+2700105,Belgrade-Brooten-Elrosa Public School District,012364000000
+2712580,G.F.W. Public School District,012365000000
+2700106,A.C.G.C. Public School District,012396000000
+2718070,Le Sueur-Henderson School District,012397000000
+2718960,Martin County West School District,012448000000
+2791448,Norman County West School District,012527000000
+2705660,Bird Island-Olivia-Lake Lillian Public School District,012534000000
+2713040,Granada-Huntley-East Chain,012536000000
+2711085,East Central School District,012580000000
+2791449,Win-E-Mac School District,012609000000
+2700107,Greenbush-Middle River School District,012683000000
+2700123,Howard Lake-Waverly-Winsted,012687000000
+2700108,Pipestone Area School District,012689000000
+2791450,Mesabi East School District,012711000000
+2700124,Fairmont Area School District,012752000000
+2700109,Long Prairie-Grey Eagle School District,012753000000
+2700110,Cedar Mountain School District,012754000000
+2700383,Morris Area Public Schools,012769000000
+2745735,Zumbrota-Mazeppa School District,012805000000
+2791451,Janesville-Waldorf-Pemberton,012835000000
+2700125,Lac qui Parle Valley School District,012853000000
+2700126,Ada-Borup Public School District,012854000000
+2700127,Stephen-Argyle Central Schools,012856000000
+2700128,Glencoe-Silver Lake School District,012859000000
+2700130,Blue Earth Area Public Schools,012860000000
+2700132,Red Rock Central School District,012884000000
+2700148,Glenville-Emmons School District,012886000000
+2700150,Clinton-Graceville-Beardsley,012888000000
+2700162,Lake Park Audubon School District,012889000000
+2700163,Renville County West School District,012890000000
+2700231,Jackson County Central School District,012895000000
+2700182,Redwood Area School District,012897000000
+2700183,Westbrook-Walnut Grove Schools,012898000000
+2700287,Plainview-Elgin-Millville,012899000000
+2700294,RTR Public Schools,012902000000
+2700328,Ortonville Public Schools,012903000000
+2700326,Tracy Area Public School District,012904000000
+2700379,Tri-City United School District,012905000000
+2700385,Red Lake County Central Public Schools,012906000000
+2700388,Round Lake-Brewster Public Schools,012907000000
+2700382,Brandon-Evansville Public Schools,012908000000

@@ -9,25 +9,38 @@ SELECT *
 SELECT *
 	FROM census;
 
-CREATE TABLE combined AS (
-SELECT a.*, b.*
-	FROM districts a
-	INNER JOIN census b
-	ON a.id = b.censusid
+SELECT *
+	FROM districtids;
+
+CREATE TABLE combined1 AS (
+SELECT a.geoid, a.orgid, b.*
+	FROM districtids a
+	INNER JOIN districts b
+	ON a.geoid = b.id
 );
 
-ALTER TABLE combined
+ALTER TABLE combined1
+DROP COLUMN id;
+
+CREATE TABLE combined2 AS (
+SELECT c.*, d.*
+	FROM combined1 c
+	LEFT JOIN census d
+	ON c.geoid = d.censusid
+);
+
+ALTER TABLE combined2
 DROP COLUMN censusid;
 
 CREATE TABLE mnEducationDashboard AS (
-SELECT a.*, c.lat, c.lng
-	FROM combined a
-	INNER JOIN coordinates c
-	ON a.id = c.geoid
+SELECT e.*, f.lat, f.lng
+	FROM combined2 e
+	INNER JOIN coordinates f
+	ON e.geoid = f.geoid
 );
 
 ALTER TABLE mnEducationDashboard 
-ADD PRIMARY KEY (id);
+ADD PRIMARY KEY (geoid);
 
 /* Export data to CSV */
 COPY MNEducationDashboard

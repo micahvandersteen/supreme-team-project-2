@@ -47,6 +47,13 @@ CREATE TABLE census (
     YesInternet_Pct DEC
 );
 
+/* District IDs*/
+CREATE TABLE districtids (
+    geoid INT PRIMARY KEY,
+    districtname TEXT,
+    orgid TEXT
+);
+
 /* Insert data from CSV files */ 
 /* Update file paths to location on local computer */
 COPY districts
@@ -59,5 +66,9 @@ WITH (FORMAT CSV, HEADER);
 
 COPY census
 FROM 'path\...\static\data\districtdata_census.csv'
+WITH (FORMAT CSV, HEADER);
+
+COPY districtids
+FROM 'path\...\static\data\districtid.csv'
 WITH (FORMAT CSV, HEADER);
 
