@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DATABASE_URL will contain the database connection string:
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
 # Connects to the database using the app config
@@ -79,4 +78,3 @@ def get_data():
 
 if __name__ == '__main__':
     app.run(debug=True)
->>>>>>> 8607a76574414da7baff00a76621ce0783307be2
