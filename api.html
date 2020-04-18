@@ -22,194 +22,205 @@
        
       <!--Plotly-->
       <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      
+      <!-- AOS javascript library -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      
       <!--Our CSS-->
       <link rel="stylesheet" type="text/css" href="static/css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
   </head>
     
-<body>
-  <div class="container" id="main">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">API Documentation</h1><hr>
-        <span><p class="lead">Welcome to the Minnesota Education Dashboard API&nbsp;&nbsp;<a class="btn btn-success btn-md" href="Visualizations.html" role="button"><strong>&rarr;</strong>&nbsp;&nbsp;Interactive Map</a></p></span>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-12" id="api_summary_text">
-        <h4>Looking for data?</h4>
-        <p class="main">Use the base url with any of the keywords below to call for education data</p>
-        <br>
-        <p class="main"><strong>Base URL:  </strong><a href="{{url_for('get_data')}}">"/api/v1.0/data"</a></p>
-        <ul>
-          <li>by District name</li>
-          <li>by enrollment</li>
-          <li>by assessment scores</li>
-          <li> . . </li>
-          <li> . . </li>
-        </ul>
-      </div>
-    </div> <!--END first row -->
-    
-    <div class="row">
-      <div class="col-md-12 mt-4">
-        <h5>Variables</h5>
-      </div>
+  <body>
+    <div class="container" id="main">
+
+          <div class="jumbotron jumbotron-fluid" data-aos="fade-down" data-aos-duration="1500">
+              <div class="container">
+                <h1 class="display-4">API Documentation</h1><hr>
+                <span><p class="lead">Welcome to the Minnesota Education Dashboard API&nbsp;&nbsp;<a class="btn btn-success btn-md" href="Visualizations.html" 
+                role="button"><strong>&rarr;</strong>&nbsp;&nbsp;Interactive Map</a></a>&nbsp;&nbsp;<a class="btn btn-outline-primary" href="index.html" role="button" ><img src="static/images/blhm.png" width="18" height="18">&nbsp;Home</a></p></span></p></span>
+              </div>
+          </div>
+
       <div class="row">
-      <div class="col-md-12 pl-5 pr-5">
-        <table class="table table-bordered table-striped">
-          <thead>
-            <tr>
-              <th>Variable</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>GeoID</th>
-              <td>Seven digit geographic identifier number used to reference the geographic area of the district.</td>
-            </tr>
-            <tr>
-              <th>ORGID</th>
-              <td>Twelve digit organization ID number used by the state of Minnesota to reference the district.</td>
-            </tr>
-            <tr>
-              <th>District</th>
-              <td>District name.</td>
-            </tr>
-            <tr>
-              <th>ADM</th>
-              <td>Average Daily Membership (ADM) for grades EC through 12. ADM represents the portion of the year that a student is enrolled in the district.</td>
-            </tr>
-            <tr>
-              <th>GeneralFundExpend</th>
-              <td>The district's gereral fund expenditures.</td>
-            </tr>
-            <tr>
-              <th>PerPupilExpend</th>
-              <td>The district's per pupil expenditures. The per pupil expenditures are calcualted by dividing the general fund expenditures by the average daily membership.</td>
-            </tr>
-            <tr>
-              <th>AvgTeachSalary</th>
-              <td>Average salary for licensed teachers working in the district.</td>
-            </tr>
-            <tr>
-              <th>ReadingProficiency</th>
-              <td>The percent of students scoring proficient in reading on the Statewide Academic Accountability Tests. The percent proficient is calculated by dividing the count of students who meet or exceed standards by the total tested.</td>
-            </tr>
-            <tr>
-              <th>TotalEnrolled</th>
-              <td>Total Number of Students Enrolled.</td>
-            </tr>
-            <tr>
-              <th>Female_Percent</th>
-              <td>Percent of female students enrolled at the district.</td>
-            </tr>
-            <tr>
-              <th>Male_Percent</th>
-              <td>Percent of male students enrolled at the district.</td>
-            </tr>
-            <tr>
-              <th>AIAN_Percent</th>
-              <td>Percent of students enrolled who identified as American Indian or Alaska Native (AIAN).</td>
-            </tr>
-            <tr>
-              <th>Asian_Percent</th>
-              <td>Percent of students enrolled who identified as Asian.</td>
-            </tr>
-            <tr>
-              <th>NHPI_Percent</th>
-              <td>Percent of students enrolled who identified as Native Hawaiian and other Pacific Islander (NHPI).</td>
-            </tr>
-            <tr>
-              <th>Hispanic_Percent</th>
-              <td>Percent of students enrolled who identified as Hispanic or Latino.</td>
-            </tr>
-            <tr>
-              <th>Black_Percent</th>
-              <td>Percent of students enrolled who identified as Black or African American.</td>
-            </tr>
-            <tr>
-              <th>White_Percent</th>
-              <td>Percent of students enrolled who identified as White.</td>
-            </tr>
-            <tr>
-              <th>TwoMore_Percent</th>
-              <td>Percent of students enrolled who identifed as Two or More Races.</td>
-            </tr>
-            <tr>
-              <th>Meals_Percent</th>
-              <td>Percent of students enrolled who are receiving free/reduced priced meals.</td>
-            </tr>
-            <tr>
-              <th>MedianHouseIncome</th>
-              <td>Median household income of households within the district's boundaries.</td>
-            </tr>
-            <tr>
-              <th>MHI_MarginofError</th>
-              <td>Margin of error calculation for median household income.</td>
-            </tr>
-            <tr>
-              <th>NoComputer_Count</th>
-              <td>The number of households within district boundaries that specified "No" to "Computer".</td>
-            </tr>
-            <tr>
-              <th>NoComputer_Percent</th>
-              <td>The percent of households within district boundaries that specified "No" to "Computer".</td>
-            </tr>
-            <tr>
-              <th>YesComputer_Count</th>
-              <td>The number of households within district boundaries that specified "Yes" to "Computer".</td>
-            </tr>
-            <tr>
-              <th>YesComputer_Percent</th>
-              <td>The percent of households within district boundaries that specified "Yes" to "Computer".</td>
-            </tr>
-            <tr>
-              <th>NoInternet_Count</th>
-              <td>The number of households within district boundaries that specified "No" to "Internet".</td>
-            </tr>
-            <tr>
-              <th>NoInternet_Percent</th>
-              <td>The percent of households within district boundaries that specified "No" to "Internet".</td>
-            </tr>
-            <tr>
-              <th>YesInternet_Count</th>
-              <td>The number of households within district boundaries that specified "Yes" to "Internet".</td>
-            </tr>
-            <tr>
-              <th>YesInternet_Percent</th>
-              <td>The percent of households within district boundaries that specified "Yes" to "Internet".</td>
-            </tr>
-            <tr>
-              <th>Latitude</th>
-              <td>Latitude</td>
-            </tr>
-            <tr>
-              <th>Longitude</th>
-              <td>Longitude</td>
-            </tr>
-          </tbody>
-        </table>
+
+        <div class="col-md-12" id="api_summary_text">
+          <h4>Looking for Minnesota education data?</h4>
+              <p class="main">Use the base url to call for education data.  Available variables are in the table below.</p><p class="url">Base URL = "https://api.MN_ED_Dashboard.io" 
+              </p>
+			          
+            
+		  </div>
+
+        <div class="col-md-12">
+              
+                
+               
+        </div>
+      </div> <!--END first row -->
+        
+        
+      <div class="row">
+        <div class="col-md-12 mt-4" data-aos="fade-left" data-aos-duration="2100">
+          <h5>Variables</h5>
+        </div>
+        <div class="row">
+        <div class="col-md-12 pl-5 pr-5">
+          <table class="table table-bordered table-striped" data-aos="fade-up" data-aos-duration="2100">
+            <thead>
+              <tr>
+                <th>Variable</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>GeoID</th>
+                <td>Seven digit geographic identifier number used to reference the geographic area of the district.</td>
+              </tr>
+              <tr>
+                <th>ORGID</th>
+                <td>Twelve digit organization ID number used by the state of Minnesota to reference the district.</td>
+              </tr>
+              <tr>
+                <th>District</th>
+                <td>District name.</td>
+              </tr>
+              <tr>
+                <th>ADM</th>
+                <td>Average Daily Membership (ADM) for grades EC through 12. ADM represents the portion of the year that a student is enrolled in the district.</td>
+              </tr>
+              <tr>
+                <th>GeneralFundExpend</th>
+                <td>The district's gereral fund expenditures.</td>
+              </tr>
+              <tr>
+                <th>PerPupilExpend</th>
+                <td>The district's per pupil expenditures. The per pupil expenditures are calcualted by dividing the general fund expenditures by the average daily membership.</td>
+              </tr>
+              <tr>
+                <th>AvgTeachSalary</th>
+                <td>Average salary for licensed teachers working in the district.</td>
+              </tr>
+              <tr>
+                <th>ReadingProficiency</th>
+                <td>The percent of students scoring proficient in reading on the Statewide Academic Accountability Tests. The percent proficient is calculated by dividing the count of students who meet or exceed standards by the total tested.</td>
+              </tr>
+              <tr>
+                <th>TotalEnrolled</th>
+                <td>Total Number of Students Enrolled.</td>
+              </tr>
+              <tr>
+                <th>Female_Percent</th>
+                <td>Percent of female students enrolled at the district.</td>
+              </tr>
+              <tr>
+                <th>Male_Percent</th>
+                <td>Percent of male students enrolled at the district.</td>
+              </tr>
+              <tr>
+                <th>AIAN_Percent</th>
+                <td>Percent of students enrolled who identified as American Indian or Alaska Native (AIAN).</td>
+              </tr>
+              <tr>
+                <th>Asian_Percent</th>
+                <td>Percent of students enrolled who identified as Asian.</td>
+              </tr>
+              <tr>
+                <th>NHPI_Percent</th>
+                <td>Percent of students enrolled who identified as Native Hawaiian and other Pacific Islander (NHPI).</td>
+              </tr>
+              <tr>
+                <th>Hispanic_Percent</th>
+                <td>Percent of students enrolled who identified as Hispanic or Latino.</td>
+              </tr>
+              <tr>
+                <th>Black_Percent</th>
+                <td>Percent of students enrolled who identified as Black or African American.</td>
+              </tr>
+              <tr>
+                <th>White_Percent</th>
+                <td>Percent of students enrolled who identified as White.</td>
+              </tr>
+              <tr>
+                <th>TwoMore_Percent</th>
+                <td>Percent of students enrolled who identifed as Two or More Races.</td>
+              </tr>
+              <tr>
+                <th>Meals_Percent</th>
+                <td>Percent of students enrolled who are receiving free/reduced priced meals.</td>
+              </tr>
+              <tr>
+                <th>MedianHouseIncome</th>
+                <td>Median household income of households within the district's boundaries.</td>
+              </tr>
+              <tr>
+                <th>MHI_MarginofError</th>
+                <td>Margin of error calculation for median household income.</td>
+              </tr>
+              <tr>
+                <th>NoComputer_Count</th>
+                <td>The number of households within district boundaries that specified "No" to having a computer in the household.</td>
+              </tr>
+              <tr>
+                <th>NoComputer_Percent</th>
+                <td>The percent of households within district boundaries that specified "No" to having a computer in the household.</td>
+              </tr>
+              <tr>
+                <th>YesComputer_Count</th>
+                <td>The number of households within district boundaries that specified "Yes" to having a computer in the household.</td>
+              </tr>
+              <tr>
+                <th>YesComputer_Percent</th>
+                <td>The percent of households within district boundaries that specified "Yes" to having a computer in the household.</td>
+              </tr>
+              <tr>
+                <th>NoInternet_Count</th>
+                <td>The number of households within district boundaries that specified "No" to having internet access in the household.</td>
+              </tr>
+              <tr>
+                <th>NoInternet_Percent</th>
+                <td>The percent of households within district boundaries that specified "No" to having internet access in the household.</td>
+              </tr>
+              <tr>
+                <th>YesInternet_Count</th>
+                <td>The number of households within district boundaries that specified "Yes" to having internet access in the household.</td>
+              </tr>
+              <tr>
+                <th>YesInternet_Percent</th>
+                <td>The percent of households within district boundaries that specified "Yes" to having internet access in the household.</td>
+              </tr>
+              <tr>
+                <th>Latitude</th>
+                <td>Latitude</td>
+              </tr>
+              <tr>
+                <th>Longitude</th>
+                <td>Longitude</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
       </div>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <footer><a href="index.html">Back to Home</a></footer> 
+        </div>
       </div>
-    </div>
+    </div>   <!--END main container-->
     
-    <div class="row">
-      <div class="col-md-12">
-        <footer><a href="index.html">Back to Home</a></footer> 
-      </div>
-    </div>
-  </div>   <!--END main container-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/logic.js"></script>
+    <script type="text/javascript" src="static/js/plot.js"></script>
   
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="static/js/config.js"></script>
-  <script type="text/javascript" src="static/js/logic.js"></script>
-  <script type="text/javascript" src="static/js/plot.js"></script>
-
-</body>
-
-</html>
+  </body>
+  
+  </html>
