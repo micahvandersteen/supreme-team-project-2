@@ -98,7 +98,7 @@ select {
     bottom: 3.7px;
     }
 
-/* .info {
+ .info {
         padding: 6px 8px;
         font: 14px/16px Arial, Helvetica, sans-serif;
         background: white;
@@ -109,4 +109,16 @@ select {
     .info h4 {
         margin: 0 0 5px;
         color: #777;
-    } */
+    }
+    .legend {
+        line-height: 18px;
+        color: #555;
+    }
+    .legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+
