@@ -358,18 +358,28 @@ function getGrade(layerSelected) {
     }
 };
 
+function getColor(d) {
+
+    return d > 100 ? "darkred" :
+          d > 80 ? "darkred" :
+          d > 60 ? "red" :
+          d > 40 ? "orange" :
+          d > 20 ? "yellow" :
+                    "lemonchiffon";
+ }
+ 
 legend.onAdd = function (myMap) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         // change so grades change by selected variable
-        grades = gradesMedianHouseholdIncome, // CHANGE THIS TO GET GRADE FROM SELECTED LAYER USING GETGRADE FUNCITON
+        grades = [0,20,40,60,80,100], // CHANGE THIS TO GET GRADE FROM SELECTED LAYER USING GETGRADE FUNCITON
         labels = [];
 
     // loop through intervals 'grades' and generate label
     for (var i = 0; i < grades.length - 1; i++) {
       div.innerHTML += 
-      '<i style="background:' + getColorMHI(grades[i] + 1) + '"></i> ' +
-      grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+      '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+      grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '%<br>' : '+');
     } 
 
     return div;
