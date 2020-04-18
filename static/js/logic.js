@@ -78,34 +78,35 @@ const dataFile = "static/data/newdistrictboundaries.geojson";
     // ==================================
     // Defining grades object for legend
     // ==================================
-    var gradesTotalEnrollment = [0,7790,15543,23296,31049,38802],
-      gradesperPupilExpenditure = [6598,9786,12973,16161,19348,22536],
-      gradesreadingProficiencyScores = [22.4,35.6,48.8,62,75.2,88.5],
-      gradesteacherSalaries = [31994,40693,49392,58091,66790,75489],
-      gradesmedianHouseholdIncome = [26313,44909,63505,82102,100697,119294];
+    // var gradesTotalEnrollment = [0,7790,15543,23296,31049,38802],
+    //   gradesperPupilExpenditure = [6598,9786,12973,16161,19348,22536],
+    //   gradesreadingProficiencyScores = [22.4,35.6,48.8,62,75.2,88.5],
+    //   gradesteacherSalaries = [31994,40693,49392,58091,66790,75489],
+    //   gradesmedianHouseholdIncome = [26313,44909,63505,82102,100697,119294]
+    //   gradesP = [0,20,40,60,80,100];
 
 
-    var legend = L.control({position: 'bottomright'});
+    // var legend = L.control({position: 'bottomright'});
 
-    legend.onAdd = function (myMap) {
+    // legend.onAdd = function (myMap) {
 
-      var div = L.DomUtil.create('div', 'info legend'),
-          // change so grades change by selected variable
-          grades = gradesTotalEnrollment, // CHANGE THIS TO SELECT GRADE FROM GRADE OBJECTS
-          labels = [];
+    //   var div = L.DomUtil.create('div', 'info legend'),
+    //       // change so grades change by selected variable
+    //       grades = gradesP, // CHANGE THIS TO SELECT GRADE FROM GRADE OBJECTS
+    //       labels = [];
 
-      // loop through intervals 'grades' and generate label
-      for (var i = 0; i < grades.length - 1; i++) {
-        div.innerHTML += 
-        '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-        grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
-      } 
+    //   // loop through intervals 'grades' and generate label
+    //   for (var i = 0; i < grades.length - 1; i++) {
+    //     div.innerHTML += 
+    //     '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+    //     grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '%<br>' : '+');
+    //   } 
 
-      return div;
+    //   return div;
 
-    };
+    // };
 
-    legend.addTo(myMap);
+    // legend.addTo(myMap);
 
 
 // Adding Layer Control for Chorpleth layers
