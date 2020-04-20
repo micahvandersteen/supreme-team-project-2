@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>MN Education Dashboard Home</title>
+      <!-- Leaflet CSS & JS -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+      <!-- Load Esri Leaflet from CDN -->
+      <script src="https://unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet.js" integrity="sha512-cMQ5e58BDuu1pr9BQ/eGRn6HaR6Olh0ofcHFWe5XesdCITVuSBiBZZbhCijBe5ya238f/zMMRYIMIIg1jxv4sQ=="crossorigin=""></script>
+      <!-- Bootstrap-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+      <!-- Leaflet-Choropleth JavaScript -->
+        <script type="text/javascript" src="static/js/choropleth.js"></script>
+      <!-- Plotly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <!-- AOS javascript library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- Our CSS -->
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  </head>
+    
+  <body>
+    <div class="container" id="main">
+
+          <div class="jumbotron jumbotron-fluid" data-aos="fade-down" data-aos-duration="1500">
+              <div class="container">
+                <h1 class="display-4">Minnesota Education Dashboard</h1><hr>
+                <span><p class="lead">An interactive visualization of Minnesota's school districts.&nbsp;<a class="btn btn-success btn-md" 
+                  href="/visualizations" role="button"><strong>&rarr;</strong>&nbsp;&nbsp;Interactive Map</a>&nbsp;&nbsp;<a class="btn btn-outline-success" href="/api" role="button" >&rarr;&nbsp;<b>API</b></a></p></span>
+              </div>
+          </div>
+
+      <div class="row"> <!--Row 1 Content -->
+        <div class="col-md-12" id="summary_text">
+          <h3>Summary</h3>
+            <p class="main">This dashboard presents data on Minnesota's approximately 300 public school districts. Interactive plots show the relationships between reading proficiency and factors such as spending, household income, and student population size. Hover over the data points below to see District-specific information.The <a href="Visualizations.html">interactive map</a> page depicts the boundaries of Minnesota's districts for the 2018-19 school year. Click on a district to see its name and the average number of students enrolled. Activate additional map layers like Median Household Income by District.
+            
+              <select id="selDataset" onchange="optionChanged(this.value)">
+                <option value = "opt1" class="blue">Per Pupil Expenditures</option>
+                <option value = "opt2" class="blue">General Fund Expenditures</option>
+                <option value = "opt3" class="blue">Enrollment</option>
+                <option value = 'opt4' class="blue">Median Household Income</option>
+              </select>
+          </p>
+          </div>
+      </div> <!-- END Row 1 -->
+
+    
+      <div class="row"> <!--Row 2 --> 
+
+      <div class="col-md-12" id="scatter" data-aos="flip-left" data-aos-duration="1500" data-aos-once="false">
+        <object type="text/html" data="https://boar1ang.github.io/scatter1/" width="930px" height="450px"></object>
+      </div>          
+
+  </div> <!--End Row 2 -->          
+      
+  <div class="row" data-aos="fade-up" data-aos-duration="2100"> <!-- Row 3 -->
+          <div class="col-md-5" id="sources_text">
+            <h6>Source Data</h6>
+              <p>Data used for the analyses were sourced from the U.S. Census, the Minnesota Department of Education, and the National Center for Education Statistics (NCES). For more information on the data sources see the links provided below.
+              </p>
+              <ul>
+                <li>2018-Minnesota Median Household Income Data. American Community Survey Table S1901. Retrieved from <a href="https://data.census.gov/cedsci/table?q=Minnesota-income.gov">https://data.census.gov/cedsci/table?q=Minnesota-income.gov</a></li>
+                <li>National Center for Education Statistics (NCES). School District Boundaries-Current. Retrieved from <a href="https://data-nces.opendata.arcgis.com/datasets/school-district-boundaries-current/data?where=STATEFP%20%3D%20%2727%27">https://data-nces.opendata.arcgis.com/datasets/school-district-boundaries</a> </li>
+                <li>2018-2019 General Fund Expenditures (Minnesota Department of Education (MDE). General Fund unreserved Balance for FY 2013-Present. Downloaded 4/4/2020 from <a href="https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=43">https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=43</a></li>
+                <li>2019 Average Daily Membership (Minnesota Department of Education (MDE). Downloaded 4/4/2020 from <a href="https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=2">https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=2</a></li>
+                <li>2019 Percent Proficient in Reading (Minnesota Department of Education (MDE). Reading MCA MTAS Results. Downloaded 4/4/2020 from <a href="https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=1">https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=1</a></li>
+                <li>2019 Average Teacher Salary (Minnesota Professional Educator Licensing and Standards Board (PELSB). Licensed Average Salary by District. Downloaded 4/4/2020 from <a href="https://public.education.mn.gov/MDEAnalytics/PELSB.jsp?TOPICID=437">https://public.education.mn.gov/MDEAnalytics/PELSB.jsp?TOPICID=437</a></li>
+              </ul>
+          </div>
+        
+          <div class="col-md-7" id="static">      
+            <img src="static/images/box_plot.2.png" width="400", height="455">
+          </div>
+      </div> <!--END Row 2 -->
+
+      <div class="row">   
+        <div class="col-md-12">
+          
+           <footer class="icon">2020 | A supreme-team production.&nbsp;&nbsp;<img src="static/images/school.svg" width="29px" height="29px"></footer>
+        </div>
+      </div>
+
+    </div>   <!--END main container-->  
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="static/js/config.js"></script>
+        <script type="text/javascript" src="static/js/logic.js"></script>
+        <script type="text/javascript" src="static/js/plot.js"></script>
+
+        
+    </div>
+  </body>
+</html>
+
+<!--Icon attribution: https://www.flaticon.com/authors/smashicons -->
